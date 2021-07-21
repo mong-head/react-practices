@@ -4,16 +4,16 @@
 
 <img src="https://user-images.githubusercontent.com/52481037/126437340-6c7cf6ec-6d77-446a-b608-b36a6fa2e8c1.jpg" width="40%" />
 
-    1. webpack : 작게 분리된 많은 modules의 dependency을 분석 tool
-    2. bundling
-        * bundle(하나의 js file)로 묶는 작업 수행
-        * application build 작업 수행 
-            * linting (ESLing, 문법 check) 작업
-            * documentation (JSDoc)
-            * testing(Mocha, Jest) 작업
-            * 난독화 / 압축 (Uglify) 작업
-            * bundling
-    3. 추상화 : JS 뿐만 아니라 다양한 asset(image, font, css)들도 module로 취급하고 추상화함
+1. webpack : 작게 분리된 많은 modules의 dependency을 분석 tool
+2. bundling
+    * bundle(하나의 js file)로 묶는 작업 수행
+    * application build 작업 수행 
+        * linting (ESLing, 문법 check) 작업
+        * documentation (JSDoc)
+        * testing(Mocha, Jest) 작업
+        * 난독화 / 압축 (Uglify) 작업
+        * bundling
+3. 추상화 : JS 뿐만 아니라 다양한 asset(image, font, css)들도 module로 취급하고 추상화함
 
 ## project
 
