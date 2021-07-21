@@ -2,6 +2,15 @@
 
 ## CRA(create react app) 기반 applciation ([ex00](ex00))
 
+### 설치 & 프로젝트 만들기
+    ```shell
+    ## /react-practices
+    npm i -g create-react-app
+    ## /react-practices/basic
+    npx create-react-app ex00
+    ```
+
+
 ## 전통적인 DOM API 기반 Application ([ex01](ex01))
 
 ## applciation 분리 1([ex02](ex02))
