@@ -1,4 +1,4 @@
-## applciation 분리
+## applciation 단순 분리
 
 1. project 생성
     ```bash
