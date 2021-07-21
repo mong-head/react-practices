@@ -16,6 +16,7 @@
       |--- /public
       |       |--- index.html
       |       |--- index.js
+      |       |--- App.js
       |--- dev-server
     ```
 3. script
