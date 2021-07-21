@@ -1,6 +1,6 @@
 # React Practices
 
-## 1. basic
+## 1. [basic](basic)
 
 ## 2. Component
 
