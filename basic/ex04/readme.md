@@ -1,7 +1,8 @@
 ## application bundling
 
 ### 개념
-    <img src="https://user-images.githubusercontent.com/52481037/126437340-6c7cf6ec-6d77-446a-b608-b36a6fa2e8c1.jpg" width="40%" />
+
+<img src="https://user-images.githubusercontent.com/52481037/126437340-6c7cf6ec-6d77-446a-b608-b36a6fa2e8c1.jpg" width="40%" />
 
     1. webpack : 작게 분리된 많은 modules의 dependency을 분석 tool
     2. bundling
