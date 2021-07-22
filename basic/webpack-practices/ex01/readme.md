@@ -12,7 +12,7 @@
     ```bash
     npm i -D webpack webpack-cli express
     ## webpack 설치 확인
-    npm webpack --version
+    npx webpack --version
     ```
 
 ## 2. build
