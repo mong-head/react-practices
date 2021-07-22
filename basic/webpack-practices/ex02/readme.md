@@ -46,16 +46,7 @@
 * ```npx webpack```
     * webpack.config.js의 output section에 지정한 ```./public/bundle.js```에 bundling 됨
 
-## 3. test server 실행 (dev-server)
-
-```bash
-node dev-server.mjs
-```
-* ES6 module로 실행
-    * method 1 : 확장자를 mjs -> 사용
-    * method 2 : package.json에서 script내에 ```"type":"module"```해줌 -> webpack에 영향받음,안씀
-
-## 4. config
+## 3. config
 
 * ES6이전 사용
 * [webpack.config.js](webpack.config.js)
@@ -70,3 +61,14 @@ node dev-server.mjs
         }
     }
     ```
+
+## 4. test server 실행 (dev-server)
+
+```bash
+node dev-server.mjs
+```
+* ES6 module로 실행
+    * method 1 : 확장자를 mjs -> 사용
+    * method 2 : package.json에서 script내에 ```"type":"module"```해줌 -> webpack에 영향받음,안씀
+
+
