@@ -40,6 +40,10 @@
 
 ### 7. React(API 기반) application refactoring ([ex05](ex05))
 
+* refactoring : DOM API로 작성된 ex04를 React API를 이용해서 작성
+* webpack-practices에서 연습한 것을 토대로 webpack 사용
+    * test server : webpack-dev-server 사용
+
 ### 8. React(JSX 기반) application refactoring : babel(transpile) ([ex06](ex06))
 
 ### 9. React 기본 개념 ([ex07](ex08))
