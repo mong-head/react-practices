@@ -13,7 +13,7 @@
     ```
 * 모듈 설치
     ```bash
-    npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass file-loader
+    npm i -D webpack webpack-cli webpack-dev-server
     ## webpack 설치 확인
     npx webpack --version
     ```
