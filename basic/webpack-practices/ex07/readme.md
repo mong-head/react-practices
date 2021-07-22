@@ -17,11 +17,6 @@
     ## webpack 설치 확인
     npx webpack --version
     ```
-    * sass-loader
-        * 의존 : node-sass
-        * sass -> css loader 따라서 css loader 필요함
-    * file-loader
-        * for image file
 
 * script
     ```json
@@ -86,7 +81,6 @@
 npx webpack
 ```
 * webpack.config.js의 output section에 지정한 ```./public/bundle.js```에 bundling 됨
-* build 꼭 해야함 (svg만들려면)
 
 ## 4. test server 실행 (dev-server)
 
