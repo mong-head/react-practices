@@ -13,3 +13,11 @@
     * webpack config file 작성 (entry, output, dev-server, loader)
     * test server (dev-server) : webpack
     * loader : css loader, style loader
+* [ex05](ex05)
+    * webpack config file 작성 (entry, output, dev-server, loader)
+    * test server (dev-server) : webpack
+    * loader : css loader, style loader, sass loader
+* [ex06](ex06)
+    * webpack config file 작성 (entry, output, dev-server, loader)
+    * test server (dev-server) : webpack
+    * loader : css loader, style loader, sass loader, image loader
