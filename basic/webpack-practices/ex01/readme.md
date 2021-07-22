@@ -1,5 +1,7 @@
 # webpack-practice : ex01
 
+* webpack module 설치하고 build 해보기
+
 ## 1. project 생성
 
 * 생성
