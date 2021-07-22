@@ -38,15 +38,18 @@
         |--- package-lock.json
         |--- /node-modules
         |--- /public
-        |       |--- index.html
+        |       |--- /assets
+        |       |       |--- /images
+        |       |       |      |--- logo.svg    [build 결과]
         |       |--- bundle.js                  [build 결과]
+        |       |--- index.html
         |--- /src
         |       |--- /assets
         |       |       |--- /css
         |       |       |      |--- App.scss
         |       |       |      |--- index.css
         |       |       |--- /images
-        |       |       |      |--- logo.svg    [build 결과]
+        |       |       |      |--- logo.svg   
         |       |--- index.js
         |       |--- App.js
         |--- webpack.config.js [webpack configuration file]   
