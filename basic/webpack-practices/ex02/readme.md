@@ -17,6 +17,14 @@
     npx webpack --version
     ```
 
+* script
+    ```json
+    "scripts": {
+        "start": "node dev-server.mjs",
+        "build" : "npx webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    ```
 * structure
     ```txt
     /ex02
@@ -35,7 +43,7 @@
 
 ## 2. build
 
-* ```npx build```
+* ```npx webpack```
     * webpack.config.js의 output section에 지정한 ```./public/bundle.js```에 bundling 됨
 
 ## 3. test server 실행 (dev-server)
