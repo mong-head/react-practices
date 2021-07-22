@@ -16,6 +16,29 @@
     ## webpack 설치 확인
     npx webpack --version
     ```
+* structure
+    ```txt
+    /ex01
+        |--- package.json
+        |--- package-lock.json
+        |--- /node-modules
+        |--- /public
+        |       |--- index.html
+        |       |--- main.js
+        |--- /src
+        |       |--- index.js
+        |       |--- App.js
+        |--- dev-server.mjs  
+    ```
+
+* script
+    ```json
+    "scripts": {
+        "start": "node dev-server.mjs",
+        "build" : "npx webpack ./src/index.js -o ./public",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    ```
 
 ## 2. build
 
