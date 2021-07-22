@@ -21,3 +21,7 @@
     * webpack config file 작성 (entry, output, dev-server, loader)
     * test server (dev-server) : webpack
     * loader : css loader, style loader, sass loader, image loader
+* [ex07](ex07)
+    * webpack config file 작성 (entry, output, dev-server, loader)
+    * test server (dev-server) : webpack
+    * loader : text loader (내가 만든 loader)
