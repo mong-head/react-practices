@@ -1,7 +1,7 @@
 # webpack-practice : ex04
 
 * webpack.config.js : 웹팩 설정해보기
-    * loader 설정
+    * loader 설정 : css-loader, style-loader
 
 ## 1. project 생성
 

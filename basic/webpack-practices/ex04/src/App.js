@@ -1,4 +1,4 @@
-import './asset/css/App.css';
+import './assets/css/App.css';
 
 // DOM API
 const App = () => {
