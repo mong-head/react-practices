@@ -8,7 +8,7 @@
 2. bundling
     * bundle(하나의 js file)로 묶는 작업 수행
     * application build 작업 수행 
-        * linting (ESLing, 문법 check) 작업
+        * linting (ESLint, 문법 check) 작업
         * documentation (JSDoc)
         * testing(Mocha, Jest) 작업
         * 난독화 / 압축 (Uglify) 작업
