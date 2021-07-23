@@ -49,7 +49,11 @@
 * DOM API로 만들어진 ex04를 refactoring (using JSX, webpack)
     * babel loader 사용
 
-### 9. React 기본 개념사용: CRA로 만든 application 비슷하게 만들기 ([ex07](ex07))
+### 9. babel 연습 ([babel-practices](babel-practices))
+
+* babel 연습
+
+### 10. React 기본 개념사용: CRA로 만든 application 비슷하게 만들기 ([ex07](ex07))
 
 * use
     * webpack
