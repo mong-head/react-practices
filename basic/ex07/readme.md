@@ -1,6 +1,8 @@
 # CRA로 만든 Application 직접 설정해서 만들어 보기
 
-* DOM API로 만들어진 ex04를 refactoring (using React API, webpack)
+* CRA로 만든 화면처럼 나오게 만들기
+    * use webpack
+    * use babel
 
 ## 1. project
 
@@ -10,7 +12,17 @@
     ```
 * 설치
     ```bash
+    ## webpack
     npm i -D webpack webpack-cli webpack-dev-server
+
+    ## loader
+    npm i -D style-loader css-loader file-loader babel-loader
+
+    ## babel
+    npm i -D @babel/core @babel/cli  
+    npm i -D @babel/preset-env @babel/preset-react
+
+    ## react
     npm i react react-dom
     ```
 * scripts (package.json)
@@ -23,17 +35,24 @@
     ```
 * structure
      ```
-    /ex04
+    /ex07
       |--- package.json
       |--- package-lock.json
       |--- /node_modules
       |--- /public
+      |       |--- /assets/images/logo.svg      : build 된 거
+      |       |--- bundle.js                    : build된 거
       |       |--- index.html
-      |       |--- bundle.js      : build된 거
       |--- /src
+      |       |--- /css
+      |       |      |--- App.css
+      |       |      |--- index.css
       |       |--- index.js
       |       |--- App.js
+      |       |--- logo.svg
       |--- webpack.config.js [webpack configuration file]   
+      |--- babel.config.js [babel configuration file]   
+      ```
 
 ## 2. config
 
@@ -47,6 +66,23 @@
             path: path.resolve('public'),
             filename: 'bundle.js'
         },
+        module: {
+            rules: [{
+                test: /\.css$/i,
+                use: ['style-loader','css-loader']
+            },{
+                test: /\.svg$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: '/assets/images',
+                    name: '[name].[ext]'
+                }
+            },{
+                test: /\.js$/i,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            }]
+        },
         devServer: {
             contentBase: path.resolve('public'),
             host: "0.0.0.0",
@@ -59,50 +95,30 @@
         }
     }
     ```
-## 3. application 작성
-
-* [public/index.html](public/index.html)
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type='module' src='bundle.js'></script>
-    </body>
-    </html>
-    ```
-* [src/App.js](src/App.js)
-    ```js
-    import React from 'react';
-
-    export const App = () => {
-        const app = React.createElement('h1', null, 'Hello World'); // (element, 부모, 자식)
-        return app;
+* [babel.config.json](babel.config.json)
+    ```json
+    {
+        "presets": [["@babel/preset-env",{
+                "targets": {
+                    "ie": "11",
+                    "edge":"89",
+                    "firefox":"92",
+                    "chrome":"90",
+                    "opera":"76",
+                    "safari":"15"
+                }
+            }],"@babel/preset-react"
+        ]
     }
     ```
-
-* [src/index.js](src/index.js)
-    ```js
-    import ReactDOM from 'react-dom';
-    import { App } from './App.js'
-
-    ReactDOM.render(App(), document.getElementById('root'));
-    ```
-
-## 4. build
+## 3. build
 
 ```bash
 npx webpack
 ```
 * webpack.config.js의 output section에 지정한 ```./public/bundle.js```에 bundling 됨
 
-## 5. test server 실행 (dev-server)
+## 4. test server 실행 (dev-server)
 
 ```bash
 npx webpack server --progress
