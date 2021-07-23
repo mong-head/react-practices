@@ -2,11 +2,11 @@
     "presets": [["@babel/env",{
         "targets": {
             "ie":"11",
-            "edge":"80",
-            "firefox":"73",
-            "chrome":"82",
-            "opera":"69",
-            "safari":"13"
+            "edge":"89",
+            "firefox":"92",
+            "chrome":"90",
+            "opera":"76",
+            "safari":"15"
         }
     }],"@babel/react"]
 }

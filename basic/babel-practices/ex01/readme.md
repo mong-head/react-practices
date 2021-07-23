@@ -25,3 +25,4 @@
 
     console.log(result);
     ```
+    * babel loader가 babel-core 사용
