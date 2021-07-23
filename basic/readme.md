@@ -46,4 +46,12 @@
 
 ### 8. React(JSX 기반) application refactoring : babel(transpile) ([ex06](ex06))
 
-### 9. React 기본 개념 ([ex07](ex08))
+* DOM API로 만들어진 ex04를 refactoring (using JSX, webpack)
+    * babel loader 사용
+
+### 9. React 기본 개념사용: CRA로 만든 application 비슷하게 만들기 ([ex07](ex07))
+
+* use
+    * webpack
+        * loader
+    * babel
