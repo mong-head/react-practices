@@ -130,6 +130,34 @@
 * [Header.js](src/04/Header.js)
 
 ### 05. class component 작성
+
+* 참고
+    * [class 참고](https://github.com/mong-head/frontend-dev/tree/master/javascript-practices/es06#7-class-ex07)
+
+    * [module 참고](https://github.com/mong-head/frontend-dev/tree/master/javascript-practices/es06#8-module-export)
+
+* extends React.Component
+    * Component의 render함수 overriding
+
+* [App.js](src/05/App.js)
+    ```js
+    import React, {Component,Fragment} from 'react';
+    import Header from './Header';
+    import Content from './Content';
+
+    export default class extends Component{
+        render(){
+            return (
+                <Fragment>
+                    <Header name='Application05'/>
+                    <Content />
+                </Fragment>
+            );
+        }
+    }
+    ```
+    * default니까 class 이름 없어도 됨
+
 ### 06. 특징 3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement
 ### 07. 특징 4: Blank space (공백)
 ### 08. Dynamic HTML Rendering 
