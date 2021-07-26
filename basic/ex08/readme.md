@@ -7,6 +7,7 @@
 * [babel에서 어떻게 변환되는지 확인 사이트](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=JYWwDg9gTgLgBAJQKYEMDG8BmUIjgcilQ3wG4AocpAD0ljgBMlMUBXAGy1YDsNgJuACgCUAb3JxJcIjFZRucQRKkqAPA2AA3AHzKV-uKoAWAJm0ApAMoANOLJjRgKdqoD0p3QYOqw2gAwAjAB0cICdS4Crk3ABAFxwABIAKgCyADKAPzVwgBQzgC7jgAgTbr56-m4aOkXCFAC-QA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.14.8&externalPlugins=)
 
 * HTML tag로 작성하지만, babel로 변환시 React.createElement로 됨(React Element임)
+
     * [App.js](src/01/App.js)
         ```js
         import React from 'react';
@@ -44,8 +45,46 @@
 
     * [index.js](src/01/index.js)
         * ```<App />``` -> ```React.createElement(App, null)```
+        * ```App``` : Object (Component)
 
 ### 02. 특징 2: Single Root Node
+
+* React.createElement(1,2,3)
+    * 1 : element(_String_) or component(_Object_)
+        * _String_ : ```<div>```인 경우, ```'div'```
+        * _Object_ : component(function or class) (```<App />```인 경우, ```App```)
+    * 2 : props(property; 속성)
+        ```json
+        {
+            id: 'hello',
+            style: '~~~'
+        }
+        ```
+    * 3 : contents
+        * Text node (```<h2>App02</h2>```인 경우 'App02')
+        * 자식 element : React.createElement(~~)
+        * ```{}``` : JS code 실행
+
+* react component 는 단일 node만 rendering할 수 있음
+    * return 시에 여러 element or component 를 할 수 없음
+    * error
+        ```js
+        return (
+            <h2>App 02</h2>
+            {React.createElement('p',{id:'test',className:'p_test'},'hi~~')}
+        );
+        ```
+    * good ([App.js](src/02/App.js))
+        ```js
+        return (
+            <div>
+                <h2>App 02</h2>
+                {React.createElement('p',{id:'test',className:'p_test'},'hi~~')}
+            </div>
+        );
+        ```
+
+
 ### 03. JSX로 function component 작성
 ### 04. Pure React(React API)로 function component 작성
 ### 05. class component 작성
