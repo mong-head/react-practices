@@ -68,9 +68,9 @@
         module: {
             rules: [{
                 test: /\.css$/i,
-                use: ['style-loader','css-loader']
+                use: ['style-loader',{loader:'css-loader',options:{modules:true}}]
             },{
-                test: /\.svg$/i,
+                test: /\.(svg|jpe?g|gif|png|tiff?|bmp|ico|)$/i,
                 loader: 'file-loader',
                 options: {
                     outputPath: '/assets/images',
@@ -82,8 +82,10 @@
                 loader: 'babel-loader'
             }]
         },
+        devtool: "eval-source-map",
         devServer: {
             contentBase: path.resolve('public'),
+            watchContentBase: true,
             host: "0.0.0.0",
             port: 9999,
             inline: true,
@@ -113,21 +115,21 @@
 ## 3. build
 
 ```bash
-npx webpack
+npx webpack --mode production
 ```
 * webpack.config.js의 output section에 지정한 ```./public/bundle.js```에 bundling 됨
 
 ## 4. test server 실행 (dev-server)
 
 ```bash
-npx webpack server --progress
+npx webpack server --progress --mode development
 ```
 * webpack dev-server 사용
 
 ## 5. useage
 
 * 3,4에 해당하는 내용을 package.json scripts에 설정해놓음
-```bash
-npm run build
-npm run debug
-```
+    ```bash
+    npm run build
+    npm run debug
+    ```

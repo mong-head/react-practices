@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug": "npx webpack server --progress",
-    "build": "npx webpack"
+    "debug": "npx webpack server --progress --mode development",
+    "build": "npx webpack --mode production"
   },
   "author": "",
   "license": "ISC",

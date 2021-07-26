@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
-import './css/App.css';
+import styles from './css/App.css'; // css module화
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={styles.App}>
+      <header className={styles["App-header"]}>
         <h1>Hello?</h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className={styles['App-logo']} alt="logo" />
         <p>
           React 1 Week hw
         </p>
