@@ -134,7 +134,7 @@
 * 참고
     * [class 참고](https://github.com/mong-head/frontend-dev/tree/master/javascript-practices/es06#7-class-ex07)
 
-    * [module 참고](https://github.com/mong-head/frontend-dev/tree/master/javascript-practices/es06#8-module-export)
+    * [module export 참고](https://github.com/mong-head/frontend-dev/tree/master/javascript-practices/es06#8-module-export)
 
 * extends React.Component
     * Component의 render함수 overriding
@@ -159,6 +159,34 @@
     * default니까 class 이름 없어도 됨
 
 ### 06. 특징 3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement
+
+* ```{}```내에서 if 구문 사용 X : 대신 삼항연산자 사용가능
+
+* [Clock02.js](src/06/Clock02.js)
+    ```js
+    import React from 'react';
+
+    export default function(){
+        const date = new Date();
+
+        const hour = date.getHours();
+        const minute = date.getMinutes();
+        const sec = date.getSeconds();
+
+        return (
+            <div>
+                {("0"+(hour > 12 ? hour - 12: hour)).slice(-2)}
+                : 
+                {("0"+minute).slice(-2)} 
+                : 
+                {("0"+sec).slice(-2)}
+                {hour>12 ? 'PM' : 'AM'}
+            </div>
+        );  
+    }
+    ```
+    * if,for등 보다 함수 많이 사용하기(slice,map등등)
+
 ### 07. 특징 4: Blank space (공백)
 ### 08. Dynamic HTML Rendering 
 
