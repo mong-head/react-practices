@@ -53,9 +53,12 @@
 
 * babel 연습
 
-### 10. React 기본 개념사용: CRA로 만든 application 비슷하게 만들기 ([ex07](ex07))
+### 10. ex00(CRA Ver) Reconfiguration([ex07](ex07))
 
+* CRA로 만든 application 비슷하게 만들기
 * use
     * webpack
         * loader
     * babel
+
+### 11. JSX Tutorials([ex08](ex08))
