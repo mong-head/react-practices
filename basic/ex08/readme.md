@@ -104,6 +104,31 @@
     ```
 
 ### 04. Pure React(React API)로 function component 작성
+
+* use React.createElement
+
+* [App.js](src/04/App.js)
+    ```js
+    import React, {Fragment} from 'react';
+    import Header from './Header';
+    import Content from './Content';
+
+    export default function(){
+
+        return (
+            React.createElement(
+                Fragment,
+                null,
+                React.createElement(Header),
+                React.createElement(Content,null),
+            )
+        );
+    }
+    ```
+* [index.js](src/04/index.js)
+* [Content.js](src/04/Content.js)
+* [Header.js](src/04/Header.js)
+
 ### 05. class component 작성
 ### 06. 특징 3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement
 ### 07. 특징 4: Blank space (공백)
