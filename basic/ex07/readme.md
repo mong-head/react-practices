@@ -28,9 +28,8 @@
 * scripts (package.json)
     ```json
       "scripts": {
-        "start": "npx webpack server --progress",
+        "debug": "npx webpack server --progress",
         "build" : "npx webpack",
-        "test": "echo \"Error: no test specified\" && exit 1"
     },
     ```
 * structure
@@ -124,3 +123,11 @@ npx webpack
 npx webpack server --progress
 ```
 * webpack dev-server 사용
+
+## 5. useage
+
+* 3,4에 해당하는 내용을 package.json scripts에 설정해놓음
+```bash
+npm run build
+npm run debug
+```
