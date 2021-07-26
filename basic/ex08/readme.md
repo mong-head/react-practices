@@ -54,7 +54,7 @@
         * _String_ : ```<div>```인 경우, ```'div'```
         * _Object_ : component(function or class) (```<App />```인 경우, ```App```)
     * 2 : props(property; 속성)
-        ```json
+        ```js
         {
             id: 'hello',
             style: '~~~'
@@ -84,8 +84,25 @@
         );
         ```
 
-
 ### 03. JSX로 function component 작성
+
+* [App.js](src/03/App.js)
+    ```js
+    import React from 'react';
+    import Header from './Header';
+    import Content from './Content';
+
+    export default function(){
+
+        return (
+            <React.Fragment>
+                <Header />
+                <Content />
+            </React.Fragment>
+        );
+    }
+    ```
+
 ### 04. Pure React(React API)로 function component 작성
 ### 05. class component 작성
 ### 06. 특징 3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement
