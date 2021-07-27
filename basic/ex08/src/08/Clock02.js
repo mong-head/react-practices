@@ -21,7 +21,7 @@ export default function(){
 
     return (
         // HTML Tag dynamic하게 생성해서 JSX에 추가하는 작업은 기본적으로 금지하지만,
-        // XSS 보호 기능을 끄고html를 렌더링하는 속성(property)를
+        // XSS 보호 기능을 끄고html를 렌더링하는 속성(property)를 가짐
         <div dangerouslySetInnerHTML= {{__html:contentHtml}}/>
     );  
 }

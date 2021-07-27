@@ -21,7 +21,7 @@ export default function(){
 
     return (
         //
-        // HTML Tag dynamic하게 생성해서 JSX에 추가하는 작업은 기본적으로 금지
+        // HTML Tag dynamic하게 생성해서 JSX에 추가하는 작업은 기본적으로 금지(XSS 공격 방지 기능 내장)
         <div>
             {contentHtml}
         </div>
