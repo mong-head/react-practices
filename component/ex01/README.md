@@ -22,14 +22,21 @@
     * (Parent): write props ```<ListItem name='bread' quantity='50'/>```
     * (Child) : use props ```<li>{this.props.name} : {this.props.quantity}</li>```
 
-### 02. FoodList [src/02](src/02): Data Flow with Class Component
+### 03. FoodList [src/02](src/02): Data Flow with Class Component
 
 * App.js의 data flow 보기: [App.js](src/02/App.js) -> [FoodList](src/02/FoodList.js) -> [ListItem](src/02/ListItem.js)
     * ```App.js```: ```<FoodList foods={this.foods}/>```
     * ```FoodList.js```: ```{this.props.foods.map((food)=><ListItem key={food.no} name={food.name} quantity={food.quantity} />)}```
     * ```ListItem.js```: ```<li>{this.props.name} : {this.props.quantity}</li>```
-### 02. FoodList [src/03](src/03): Data Flow wuth Function Component
 
+### 04. FoodList [src/03](src/03): Data Flow with Function Component(:star:)
+
+* 요즘, 함수형 프로그래밍이 대세!
+
+* [App.js](src/03/App.js) -> [FoodList](src/03/FoodList.js) -> [ListItem](src/03/ListItem.js)
+
+* class와 다르게 this X, 변수 넘겨줄 수 있음
+    * ```<FoodList foods={foods}/>``` -> ```export default function FoodList(props){ //props.foods```
 
 ## project
 
