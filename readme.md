@@ -2,7 +2,7 @@
 
 ## 1. [basic](basic)
 
-## 2. Component
+## 2. [Component](component)
 
 ## 3. Routing
 
