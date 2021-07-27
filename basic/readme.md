@@ -62,3 +62,12 @@
     * babel
 
 ### 11. JSX Tutorials([ex08](ex08))
+
+* JSX: React Element 생성
+    * HTML과 어떻게 다른지
+    * 주석 : ```{/* */}```
+    * component
+        * function component
+        * class component
+    * ```{ expression }```
+        * if,for가 아닌 삼항연산자, map 사용하기
