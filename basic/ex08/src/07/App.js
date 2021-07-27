@@ -5,7 +5,7 @@ import Content from './Content';
 export default function(){
     return (
         <Fragment>
-            <Header name='Application05'/>
+            <Header/>
             <Content />
         </Fragment>
     );

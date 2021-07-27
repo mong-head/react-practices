@@ -188,6 +188,11 @@
     * if,for등 보다 함수 많이 사용하기(slice,map등등)
 
 ### 07. 특징 4: Blank space (공백)
+
+* JSX에서는 공백없다고 생각하면 됨.
+* 공백표현 : ```{ }```
+    * ```{       }```이나 ```{ }```이나 공백개수 똑같음
+    
 ### 08. Dynamic HTML Rendering 
 
 ## project

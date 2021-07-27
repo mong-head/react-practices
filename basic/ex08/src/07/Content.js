@@ -4,7 +4,7 @@ import Clock02 from './Clock02';
 
 export default class extends Component{
     render(){
-        const str = '특징 3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement';
+        const str = '특징 4: Blank space (공백)';
         return (
             <Fragment>
                 <p>{str}</p>
