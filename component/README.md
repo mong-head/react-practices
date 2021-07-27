@@ -5,7 +5,10 @@
 ### 1. Property: Component 작성 ([ex01](ex01))
 
 * component 구조 잡기
-* Data Flow : Top-down method
+    * class component
+    * function component
+* Data Flow : Top-down
+    * property : owned by parent component, read by child component
 
 ### 2. Component Styling ([ex02](ex02))
 
