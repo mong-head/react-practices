@@ -195,6 +195,11 @@
 
 ### 08. Dynamic HTML Rendering 
 
+* [Clock01.js](src/08/Clock01.js)
+    * ```{contentHtml}```: 제대로 안됨(```<span>```이 안먹음) (XSS공격방지)
+* [Clock02.js](src/08/Clock02.js)
+    * ``` dangerouslySetInnerHTML= {{__html:contentHtml}```property 추가: 동적으로 HTML 추가가능한 것을 볼 수 있음
+
 ### 09. Comment
 
 * JSX != HTML
