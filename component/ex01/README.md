@@ -23,6 +23,11 @@
     * (Child) : use props ```<li>{this.props.name} : {this.props.quantity}</li>```
 
 ### 02. FoodList [src/02](src/02): Data Flow with Class Component
+
+* App.js의 data flow 보기: [App.js](src/02/App.js) -> [FoodList](src/02/FoodList.js) -> [ListItem](src/02/ListItem.js)
+    * ```App.js```: ```<FoodList foods={this.foods}/>```
+    * ```FoodList.js```: ```{this.props.foods.map((food)=><ListItem key={food.no} name={food.name} quantity={food.quantity} />)}```
+    * ```ListItem.js```: ```<li>{this.props.name} : {this.props.quantity}</li>```
 ### 02. FoodList [src/03](src/03): Data Flow wuth Function Component
 
 
