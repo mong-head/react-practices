@@ -1,9 +1,11 @@
 import React from 'react';
+import Guestbook from './Guestbook';
 
 export default function App(){
     return (
         <div id='App'>
-            <h1>guestbook</h1>
+            <Guestbook />
+            {/* Dialog는 구현 X */}
         </div>
     );
 }
