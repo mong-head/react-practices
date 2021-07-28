@@ -6,6 +6,7 @@
 
 1. Component Data(Component Info)
 2.  Data Flow, Component Communication(Component 간의 통신)
+    * component 간의 통신은 부모 자식간에만 가능
     * Top-down : Parent Component -> Child Component
 3. Child: property 변경 불가
     * parent component : wirte,read (own)
