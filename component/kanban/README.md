@@ -60,9 +60,22 @@
 * src
 
     * ex01
+        * component 작성
+            * component
+
+                <img src="../../image/kanban_components.jpg" width="30%">
+
+                * KanbanBoard.js -> CardList.js -> Card.js -> TaskList.js -> Task.js
+        * result
+
+            <img src="../../image/kanban_result_1.jpg" width="15%">
+
+    * ex02
+        * styling module : css 모듈화
         * result
 
             <img src="../../image/kanban_result.jpg" width="40%">
+
 ## Usage
 
 ```bash
