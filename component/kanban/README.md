@@ -51,12 +51,6 @@
         "react-dom": "^17.0.2"
     }
     ```
-* component
-
-    <img src="../../image/kanban_components.jpg" width="30%">
-
-    * KanbanBoard.js -> CardList.js -> Card.js -> TaskList.js -> Task.js
-
 * src
 
     * ex01
@@ -72,6 +66,15 @@
 
     * ex02
         * styling module : css 모듈화
+        * use
+            * import
+                ```js
+                import styles from '../assets/css/Card.css';
+                ```
+            * use
+                ```js
+                <div className={styles.Card}>
+                ```
         * result
 
             <img src="../../image/kanban_result.jpg" width="40%">
