@@ -12,12 +12,8 @@ module.exports = {
             test: /\.(c|sc|sa)ss$/i,
             use: ['style-loader','css-loader','sass-loader']
         },{
-            test: /\.svg$/i,
-            loader: 'file-loader',
-            options: {
-                outputPath: '/assets/images',
-                name: '[name].[ext]'
-            } 
+            test: /\.(png|gif|jpe?g|svg|ico|tiff?|bmp)$/i,
+            type: 'assets/resource'
         }]
     },
     devtool: "eval-source-map",
