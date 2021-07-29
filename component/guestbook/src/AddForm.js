@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './assets/css/Form.css'
+//import styles from './assets/css/Form.css'
+import styles from './assets/scss/Form.scss'
 
 export default function AddForm(){
     return(

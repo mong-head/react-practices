@@ -1,7 +1,8 @@
 import React from 'react';
 import list from './data.json';
 import Item from './Item';
-import styles from './assets/css/List.css';
+//import styles from './assets/css/List.css';
+import styles from './assets/scss/List.scss';
 
 export default function List(){
     return(

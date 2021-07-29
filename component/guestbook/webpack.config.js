@@ -13,10 +13,11 @@ module.exports  = () => {
     module: {
       rules: [
         {
-          test: /\.css$/i,
+          test: /\.(c|sa|sc)ss$/i,
           use: [
             "style-loader",
             { loader: "css-loader", options: { modules: true } },
+            "sass-loader"
           ],
         },
         {
