@@ -8,6 +8,7 @@ module.exports  = () => {
     output: {
       path: path.resolve("public"),
       filename: "bundle.js",
+      assetModuleFilename: 'assets/images/[hash][ext]'
     },
     module: {
       rules: [
@@ -20,11 +21,7 @@ module.exports  = () => {
         },
         {
           test: /\.(svg|jpe?g|gif|png|tiff?|bmp|ico|)$/i,
-          loader: "file-loader",
-          options: {
-            outputPath: "/assets/images",
-            name: "[name].[ext]",
-          },
+          type: 'asset/resource'
         },
         {
           test: /\.js$/i,
