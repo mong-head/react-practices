@@ -10,11 +10,12 @@ module.exports = {
     module : {
         rules: [{
             test: /\.css$/i,
-            use: ['style-loader',{loader:'css-loader',options:{modules:true}}]
+            use: ['style-loader','css-loader']
         }]
     },
     devServer: {
         contentBase: path.resolve('public'),
+        watchContentBase: true,
         host: "0.0.0.0",
         port: 9999,
         inline: true,

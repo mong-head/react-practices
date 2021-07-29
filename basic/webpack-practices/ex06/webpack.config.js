@@ -9,11 +9,8 @@ module.exports = {
     },
     module : {
         rules: [{
-            test: /\.css$/i,
-            use: ['style-loader','css-loader']
-        },{
-            test: /\.s[ac]ss$/i,
-            use: ['style-loader',{loader:'css-loader',options:{modules:true}},'sass-loader']
+            test: /\.(c|sc|sa)ss$/i,
+            use: ['style-loader','css-loader','sass-loader']
         },{
             test: /\.svg$/i,
             loader: 'file-loader',
@@ -25,6 +22,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve('public'),
+        watchContentBase: true,
         host: "0.0.0.0",
         port: 9999,
         inline: true,
