@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack server --progress",
+    "debug" : "npx webpack serve --progress",
     "build": "npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

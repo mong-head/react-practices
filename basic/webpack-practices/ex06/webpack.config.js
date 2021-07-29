@@ -5,7 +5,8 @@ module.exports = {
     entry: path.resolve('src/index.js'),
     output: {
         path: path.resolve('public'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        assetModuleFilename: 'assets/images/[hash][ext]'
     },
     module : {
         rules: [{
@@ -13,7 +14,7 @@ module.exports = {
             use: ['style-loader','css-loader','sass-loader']
         },{
             test: /\.(png|gif|jpe?g|svg|ico|tiff?|bmp)$/i,
-            type: 'assets/resource'
+            type: 'asset/resource'
         }]
     },
     devtool: "eval-source-map",

@@ -1,4 +1,4 @@
-import './assets/css/App.scss';
+import './assets/scss/App.scss';
 import logo from './assets/images/logo.svg'
 
 // DOM API
