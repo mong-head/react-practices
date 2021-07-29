@@ -1,6 +1,6 @@
 import React from 'react';
 import Task from './Task';
-import styles from '../assets/css/App.css';
+import styles from '../assets/css/TaskList.css';
 
 export default function TaskList({tasks}){
     return(

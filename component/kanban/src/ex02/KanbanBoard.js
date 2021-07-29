@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import CardList from './CardList';
 import cards from './data.json';
-import styles from '../assets/css/App.css';
+import styles from '../assets/css/KanbanBoard.css';
 
 export default function KanbanBoard(){
     return (
