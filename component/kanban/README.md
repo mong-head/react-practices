@@ -84,4 +84,4 @@
 ```bash
 npm run debug src={src_no}
 ```
-    * ex : ```npm run debug src=ex02```
+* ex : ```npm run debug src=ex02```
