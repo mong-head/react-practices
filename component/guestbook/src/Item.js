@@ -6,7 +6,7 @@ export default function Item({name,message}){
             <strong>{name}</strong>
             <p>
                 {message && message.split('\n').map((line,index)=> index > 0 ? 
-                    <Fragment>
+                    <Fragment key={index}>
                         <br/>
                         {line}
                     </Fragment>: line)}
