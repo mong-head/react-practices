@@ -4,8 +4,10 @@ import './assets/css/App.css'
 
 export default function App(){
     return (
-        <div id='App'>
-            <Guestbook />
+        <div className={'App'}>
+            <div>
+                <Guestbook />
+            </div>
             {/* Dialog는 구현 X */}
         </div>
     );
