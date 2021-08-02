@@ -21,9 +21,9 @@
 
 * ex : src/01
 
-```bash
-npm run debug src=01
-```
+    ```bash
+    npm run debug src=01
+    ```
 
 ### 02. Controlled Component (Form Component)
 
@@ -43,19 +43,59 @@ npm run debug src=01
         * Validation 가능
             * 사용자 입력값에 따른 체크 가능
 
-* ex : src/02
+* ex : [src/02](src/02), [src/02/Form.js](src/02/Form.js)
 
-```bash
-npm run debug src=02
-```
+    ```bash
+    npm run debug src=02
+    ```
+
+    * state example
+        ```js
+        import React, { useState } from 'react';
+
+        export default function Form() {
+            const [name,setName] = useState('');
+            const onchangeInputName = function(e){
+                    // validation
+                    // 열자 이상 제한
+                    setName(e.target.value.substr(0,10));
+            }
+            return (
+                <form id="joinForm" name="joinForm" method="post" action="/do/not/post">
+                    <label htmlFor="name">이름</label>
+                    <input id="name" name="name" type="text" value={ name } onChange={ onchangeInputName } />
+                </form>
+            );
+        }
+        ```
+        * ```htmlFor``` : 밑의 ```<input>```에서 id 값 같은거에 대해 바로 focus가게 해줌
+
+* 설치
+    * Awesome Font(React) 
+        * (필수)core 설치
+            ```bash
+            npm i @fortawesome/fontawesome-svg-core
+            npm i @fortawesome/react-fontawesome
+            ```
+        * (선택)font 종류
+            * icons
+                * light : 유료
+                * solid : 기본, 多 사용
+                * regular
+                * brand : Apple, Facebook mark등등 기업 폰트 적용
+            ```bash
+            npm i @fortawesome/free-solid-svg-icons
+            npm i @fortawesome/free-regular-svg-icons
+            npm i @fortawesome/free-brands-svg-icons
+            ```
 
 ### 03. Uncontrolled Component (Anti-Pattern)
 
 * ex : src/03
 
-```bash
-npm run debug src=03
-```
+    ```bash
+    npm run debug src=03
+    ```
 
 ### 04. Stateful Component VS Pure(Dumb) Component
 
