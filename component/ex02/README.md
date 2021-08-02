@@ -71,12 +71,12 @@
         * solid 사용
             * fa, fas
             ```js
-            import { faBell } fom '@fortawesome/free-solid-svg-icons';
+            import { faBell } from '@fortawesome/free-solid-svg-icons';
             ```
         * regular 사용
             * far
             ```js
-            import { farBell } from '@fortawesome/free-regular-svg-icons';
+            import { faBell as farBell } from '@fortawesome/free-regular-svg-icons';
             ```
         * brand 사용
             * fab
