@@ -39,6 +39,16 @@
 * class와 다르게 this X, 변수 넘겨줄 수 있음
     * ```<FoodList foods={foods}/>``` -> ```export default function FoodList(props){ //props.foods```
 
+### 05. Property Validation(Design) [src/04](src/04)
+
+* 설치
+```bash
+npm i -D prop-types
+```
+* property validation 
+* property 받은거 제어
+    * property type 제어하기
+
 ## project
 
 * basic/ex08의 package.json, package-lock.json 복사

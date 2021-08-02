@@ -12,6 +12,7 @@ export default function Form() {
     const [gender,setGender] = useState('male');
     const [birthYear,setBirthYear] = useState(1984);
     const [selfDescription, setSelfDescription] = useState('');
+    const [agreeProv, setAgreeProv] = useState('no');
 
     const onchangeInputName = function(e){
         // validation
@@ -33,6 +34,18 @@ export default function Form() {
 
     const onChangeInputGender = function(e){
         setGender(e.target.value);
+    }
+
+    const onChangeInputProv = function(e){
+        const status = e.target.value === 'no' ? 'yes' : 'no' ;
+
+        // 비동기 통신
+        // API 호출
+        const url = `/prov/agree?status=${status}`
+        console.log(url);
+        if(true /* 통신 성공 가정 */){
+            setAgreeProv(status);
+        }
     }
 
     return (
@@ -75,7 +88,7 @@ export default function Form() {
 
             <fieldset>
                 <legend>약관동의</legend>
-                <input id="agree-prov" type="checkbox" name="agreeProv" value= { "yes" } defaultChecked={ false } />
+                <input id="agree-prov" type="checkbox" name="agreeProv" value= { agreeProv } checked={ agreeProv === 'yes' } onChange={ onChangeInputProv }/>
                 <label>서비스 약관에 동의합니다.</label>
             </fieldset>
 
