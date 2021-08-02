@@ -41,6 +41,51 @@
 ### 06. Styled Component (:star:)
 ### 07. SASS & SCSS (:star:)
 ### 08. LESS & Stylable (:star:)
+### 09. Awesome Font
+
+* [Awesome Font  Web Site](https://fontawesome.com/)
+
+* Awesome Font(React) 
+    * 설치
+        * (필수)core 설치
+            ```bash
+            npm i @fortawesome/fontawesome-svg-core
+            npm i @fortawesome/react-fontawesome
+            ```
+        * (선택)font 종류
+            * icons
+                * light : 유료
+                * solid : 기본, 多 사용
+                * regular
+                * brand : Apple, Facebook mark등등 기업 폰트 적용
+            ```bash
+            npm i @fortawesome/free-solid-svg-icons
+            npm i @fortawesome/free-regular-svg-icons
+            npm i @fortawesome/free-brands-svg-icons
+            ```
+    * use ([src/09](src/09/App.js))
+        * React Awesome 사용
+            ```js
+            import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+            ```
+        * solid 사용
+            * fa, fas
+            ```js
+            import { faBell } fom '@fortawesome/free-solid-svg-icons';
+            ```
+        * regular 사용
+            * far
+            ```js
+            import { farBell } from '@fortawesome/free-regular-svg-icons';
+            ```
+        * brand 사용
+            * fab
+            ```js
+            import { fab } from '@fortawesome/free-brands-svg-icons';
+            ```
+    * result
+
+        <img src='../../image/component-ex02-font-result.jpg' width='30%' />
 
 ## project
 
