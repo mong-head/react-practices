@@ -33,7 +33,7 @@
 
 * dependency
     ```json
-     "devDependencies": {
+    "devDependencies": {
         "@babel/cli": "^7.14.8",
         "@babel/core": "^7.14.8",
         "@babel/preset-env": "^7.14.8",
@@ -41,6 +41,10 @@
         "babel-loader": "^8.2.2",
         "css-loader": "^6.2.0",
         "file-loader": "^6.2.0",
+        "node-sass": "^6.0.1",
+        "prop-types": "^15.7.2",
+        "sass-loader": "^12.1.0",
+        "scss-loader": "^0.0.1",
         "style-loader": "^3.2.1",
         "webpack": "^5.46.0",
         "webpack-cli": "^4.7.2",
@@ -79,8 +83,10 @@
 
             <img src="../../image/kanban_result.jpg" width="40%">
     * ex03
-        * event
-
+        * event : state 관련
+    * ex04
+        * property validator
+            * use ```prop-types```
 ## Usage
 
 ```bash
