@@ -14,13 +14,21 @@
 
 ### 3. React Event ([ex03](ex03))
 
-### 4. State 1: Controlled VS Uncontrolled ([ex04](ex04))
-### 5. State 2: Stateful and Pure Component ([ex05](ex05))
-### 6. State 3: Data Flow ([ex06](ex06))
+### 4. State: Controlled VS Uncontrolled ([ex04](ex04))
+* Controlled VS Uncontrolled
+* Stateful and Pure Component
+* Data Flow(Bottom-Up)
 
-* Data Flow : Bottom-Up method
+### 5. Component LifeCycle + AJAX(fetch, axios) ([ex07](ex07))
 
-### 7. Component LifeCycle + AJAX(fetch, axios) ([ex07](ex07))
+* App01.Emaillist(node + react)
+    * React(Frontend) Integration with Node(Backend)
+* App02.Guestbook(node + react)
+    * React(Frontend) Integration with Node(Backend)
+* App03.Gallery(node + react)
+    * React(Frontend) Integration with Node(Backend)
+* mysite(App02 + App03)
+    * React(Frontend) integration with Node (Backend)
 
 ## Apply
 

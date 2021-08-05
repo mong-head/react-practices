@@ -159,7 +159,8 @@ export default function Form() {
             * class 따라한다고 나온 것이 Hook function
                 * mount, update, unmount 지원해줌 : useState, useRef, useEffect
                 * 근데 조금 억지 부분 有 : 이미 잘 실행되는 것을 끌어올려서(hook) 사용
-        * 본목적 : 화면 그리는 용도로 사용
+        * 본목적 : 화면 그리는 용도(rendering)로 사용
+            * hook : rendering 전, 후(useEffect)에 할 것 해줌
 
 ### 05. Data Flow(Bottom-Up)
 
