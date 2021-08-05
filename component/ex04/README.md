@@ -18,6 +18,8 @@
         * component 내부 state를 외부에 정확히 나타내고 interface의 sync를 위해 다시 rendrering
     * component가 event와 상호작용을 수행할 수 있는 메커니즘 제공
         * state : 대체적으로 사용자 event로 변경되거나 통신으로 변경됨
+    * Redux
+        * component 밖에서 따로 state 관리
 
 * ex : src/01
 
@@ -91,7 +93,31 @@
 
 ### 03. Uncontrolled Component (Anti-Pattern)
 
-* ex : src/03
+* validation 할 필요없는 경우 쓰긴 함
+
+```js
+export default function Form() {
+
+    const onSubmit = function(e){
+        e.preventDefault();
+        console.log(e.target.email.value, e.target.password.value);
+    }
+
+    return (
+        <form id="loginForm" name="joinForm" method="post" action="/do/not/post" onSubmit={ onSubmit } >
+            <label htmlFor="email">이메일</label>
+            <input id="email" name="email" type="text" />
+
+            <label htmlFor="password">패스워드</label>
+            <input id="password" name="password" type="password" />
+
+            <input type="submit" value="가입" />
+        </form>
+    );
+}
+```
+
+* ex : [src/03](src/03), [src/03/Form.js](src/03/Form.js)
 
     ```bash
     npm run debug src=03
@@ -99,7 +125,55 @@
 
 ### 04. Stateful Component VS Pure(Dumb) Component
 
+* Application Component : Stateful Component, Pure Component 둘 중에 하나로 seperate하기
+    * Stateful Component
+        * state 관리
+        * Component hierarchy에서 상위층에 있는 편(최상위 부모는 아니더라도 부모인 편)
+        * Pure Component(state 관리 X)하나 이상 래핑할 수 있음
+        * Stateful Component 될 만한 Compoenent
+            * State 기반 Rendering하는 Component
+            * 하위 Component 多 가진 Component
+            * 상위 Component이고 state가지는 Component
+            * 못찾는 경우 상태 관리하는 Component만들고 pure component 래핑하기
+    * Pure Component
+        * state X
+            * Bussiness X : Data받은 것을 변화시키는 것이 X
+        * property(위에서 내려온 속성)로 화면만 Rendering
+        * 장점
+            * ReUse Good
+            * Test Good
+
+* Class, Functional Component
+    * Class Component
+        * stateful
+        * LifeCycle 존재
+            * 자식, 부모관계 관련
+            * mount, update, unmount
+                * mount : Virtual DOM의 element들을 DOM에 처음 넣기
+                * update : Virtual DOM의 element를 DOM에 수정
+                * unmount : Virtual DOM의 element를 DOM에서 없애기
+
+    * Function Component
+        * pure
+        * LifeCycle 존재 X
+            * class 따라한다고 나온 것이 Hook function
+                * mount, update, unmount 지원해줌 : useState, useRef, useEffect
+                * 근데 조금 억지 부분 有 : 이미 잘 실행되는 것을 끌어올려서(hook) 사용
+        * 본목적 : 화면 그리는 용도로 사용
+
 ### 05. Data Flow(Bottom-Up)
+
+* Top-Down Data Flow : React Application 의 기본 props 전달 방향
+* Bottom-Up Data Flow : 자식인 React Application이 data를 부모로 전달하는 경우가 반드시 있음
+
+* ex : [src/04](src/04)
+
+    * emaillist
+        * props로 전달한 callback 함수 사용하는 방법
+
+    ```bash
+    npm run debug src=03
+    ```
 
 ## Usage
 ```bash
