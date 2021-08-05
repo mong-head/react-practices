@@ -172,8 +172,10 @@ export default function Form() {
     * emaillist
         * props로 전달한 callback 함수 사용하는 방법
 
+            <img src='../../image/emaillist.jpg' width='30%'/>
+
     ```bash
-    npm run debug src=03
+    npm run debug src=04
     ```
 
 ## Usage
