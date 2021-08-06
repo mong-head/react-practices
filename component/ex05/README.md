@@ -19,9 +19,48 @@
     - componentWillUnmount()
 
 * ex : [src/01](src/01)
+    * 실행
+        ```shell
+        npm run debug src=01
+        ```
 
-## Function Component LifeCycle
+## Function Component LifeCycle : Hook function
 
 * LifeCycle 딱히 없고, Rendering(function component 본 기능) 전, 후에 useEffect,useRef,useState를 이용해서 lifecycle효과 냄
-
 * Alternative
+    * getDerivedStateFromProps
+        ```js
+	    const [boxColor, setBoxColor] = useState(color);
+        
+        // Alternative01 : getDerivedStateFromProps
+        if (boxColor !== color) {
+            setBoxColor(color);
+        }
+        ```
+    * componentDidMount & componentWillUnmount
+        ```js
+        useEffect(() => {
+            console.log("After Mount(componentDidMount)");
+            return (function(){
+                console.log("After Unmount(componentWillUnmount)");
+            });
+        },[]);
+        ```
+
+* After Rendering Function
+    1. 모든 상태에 대한 변화
+        - 상태 변화 -> rendering -> func
+        - ```useEffect(() => {})```
+        - 사용 거의 X
+        - componentDidMount, componentDidUpdate
+    2. 어떤 특정 값의 변화에 반응하는 After Rendering function
+        - 어떤 특정 state value 변화 -> rendering -> func
+        - 관심 분리 관련
+        - 사용 多
+        - ```useEffect(() => {},[boxColor])``` : boxColor state변경시에만 불러와짐
+
+* ex : [src/02](src/02)
+    * 실행
+        ```shell
+        npm run debug src=02
+        ```
