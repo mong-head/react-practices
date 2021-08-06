@@ -18,11 +18,18 @@
 3. Unmount LifeCycle
     - componentWillUnmount()
 
-* ex : [src/01](src/01)
-    * 실행
-        ```shell
-        npm run debug src=01
-        ```
+* ex 
+    * 공부 예제 : [src/01](src/01)
+        * 실행
+            ```shell
+            npm run debug src=01
+            ```
+    * 적용 예제 : [Clock src/03](src/03)
+        * 실행
+            ```shell
+            npm run debug src=03
+            ```
+        * use constructor, componentDidMount, componentWillUnmount
 
 ## Function Component LifeCycle : Hook function
 
