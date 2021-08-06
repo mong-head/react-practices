@@ -91,7 +91,7 @@ export default class LifeCycle extends Component {
      * component를 DOM에서 제거할 때
      * componentDidMount에서 등록한 event, timer 직접 생성한 DOM Element 제거 (Clean-Up)
      */
-    componentDidUnmount() {
+    componentWillUnmount() {
 		console.log(`[UNMOUNT]: ComponentDidUnmount()`);
 	}
 }
