@@ -1,0 +1,36 @@
+2021-08-09 12:27:41 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:28:34 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:29:52 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:31:43 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:33:45 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:36:50 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:18:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)

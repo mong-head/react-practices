@@ -1,0 +1,63 @@
+2021-08-09 12:26:45 info: HTTP server running on port 8088
+2021-08-09 12:27:16 info: HTTP server running on port 8888
+2021-08-09 12:27:41 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:28:34 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:29:42 info: HTTP server running on port 8888
+2021-08-09 12:29:52 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:30:00 info: HTTP server running on port 8888
+2021-08-09 12:31:43 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:33:45 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:20:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:34:23 info: HTTP server running on port 8888
+2021-08-09 12:34:25 info: HTTP server running on port 8888
+2021-08-09 12:36:30 info: HTTP server running on port 8888
+2021-08-09 12:36:44 info: HTTP server running on port 8888
+2021-08-09 12:36:50 error: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:137:17)
+    at Connection.end (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\node_modules\mysql2\lib\connection.js:819:26)
+    at Object.findAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\models\emaillist.js:18:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async readAll (E:\배경화면\STUDY\DOUZONE\vscode-projects\react-practices\integration\emaillist\backend\controllers\emaillist.js:6:29)
+2021-08-09 12:41:05 info: HTTP server running on port 8888
+2021-08-09 12:45:34 info: HTTP server running on port 8888
+2021-08-09 12:49:09 info: HTTP server running on port 8888
+2021-08-09 12:51:34 info: HTTP server running on port 8888
+2021-08-09 14:00:50 info: HTTP server running on port 8888
+2021-08-09 14:07:22 info: HTTP server running on port 8888
+2021-08-09 14:08:41 info: HTTP server running on port 8888
+2021-08-09 14:08:57 info: HTTP server running on port 8888
+2021-08-09 14:09:45 info: HTTP server running on port 8888
+2021-08-09 14:09:49 info: HTTP server running on port 8888
+2021-08-09 14:20:33 info: HTTP server running on port 8888
+2021-08-09 15:03:03 info: HTTP server running on port 8888
+2021-08-09 15:21:05 info: HTTP server running on port 8888
+2021-08-09 15:28:06 info: HTTP server running on port 8888
+2021-08-09 15:42:16 info: HTTP server running on port 8888
+2021-08-09 16:12:54 info: HTTP server running on port 8888
+2021-08-09 16:17:59 info: HTTP server running on port 8888
+2021-08-09 16:21:06 info: HTTP server running on port 8888
+2021-08-09 16:28:08 info: HTTP server running on port 8888
