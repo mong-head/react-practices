@@ -19,16 +19,7 @@
 * Stateful and Pure Component
 * Data Flow(Bottom-Up)
 
-### 5. Component LifeCycle + AJAX(fetch, axios) ([ex05](ex05))
-
-* App01.Emaillist(node + react)
-    * React(Frontend) Integration with Node(Backend)
-* App02.Guestbook(node + react)
-    * React(Frontend) Integration with Node(Backend)
-* App03.Gallery(node + react)
-    * React(Frontend) Integration with Node(Backend)
-* mysite(App02 + App03)
-    * React(Frontend) integration with Node (Backend)
+### 5.  Component LifeCycle ([ex05](ex05))
 
 ## Apply
 

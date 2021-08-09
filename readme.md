@@ -8,7 +8,11 @@
 
 ## 4. Flux : Redux 
 
-## 5. Testing
+## 5. Testing(rest)
+
+## 6. Performance
+
+## 7. Integration : Node + React
 
 ## Application
 
