@@ -40,11 +40,11 @@
       |        |--- app.config.env
       |--- /frontend
       |        |--- /src
-      |        |--- /assets
       |        |--- /config
       |        |       |--- babel.config.json
       |        |       |--- webpack.config.json
       |        |--- /public
+      |        |--- /assets
       |        |       |--- favicon.ico
       |        |       |--- index.html
       |--- /node_modules
@@ -65,7 +65,11 @@
     * Backend: Fully API Server(Node Express 기반)
     * Frontend : React(SPA)
     * AJAX : fetch 기반
-* App02.Kanban (node + react)
+* App02.[Kanban (node + react)](kanban)
+    * 개발 통합 설정(with Node Backend)
+    * Backend: Fully API Server(Node Express 기반), DB는 있는 척!
+    * Frontend : React(SPA)
+    * AJAX : fetch 기반
 * App03.Guestbook(node + react)
 * App04.Gallery(node + react)
 * mysite(App03 + App04)
