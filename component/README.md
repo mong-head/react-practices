@@ -21,6 +21,8 @@
 
 ### 5.  Component LifeCycle ([ex05](ex05))
 
+### 6. Immutability(불변성) of Component's State ([ex06](ex06))
+
 ## Apply
 
 ### Kanban board
