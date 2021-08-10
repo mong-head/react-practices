@@ -15,7 +15,7 @@ export default function EmaillistApp() {
 			// backend 로 보내기
             const response = await fetch('/api', {
                 method: 'get',
-                mode: 'same-origin', //cors: 다른 도메인인 경우, same-origin: 같은 도메인인 경우
+                mode: 'same-origin', //cors:    다른 도메인인 경우, same-origin: 같은 도메인인 경우
                 headers: {
                     'Content-Type': 'application/json'
                 },
