@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import CardList from './CardList';
 import styles from './assets/css/KanbanBoard.css';
+import update from 'react-addons-update';
 
 export default function KanbanBoard(){
 
@@ -23,7 +24,7 @@ export default function KanbanBoard(){
             if(json.result !== 'success'){
                 throw new Error(`${json.result} ${json.message}`);
             }
-            console.log(json.data);
+            
             setCards(json.data);  
         } catch(err){   
             console.error(err);
@@ -44,7 +45,27 @@ export default function KanbanBoard(){
                 headers:{'Content-Type':'application/json'},
                 body: JSON.stringify(task)
             })
-            console.log(response);
+
+            if(!response.ok) {
+                throw new Error(`${response.status} ${response.statusText}`);
+            }
+
+            const json = await response.json();
+            if(json.result !== 'success'){
+                throw new Error(`${json.result} ${json.message}`);
+            }
+
+            const cardIndex = cards.findIndex((card) => card.no === cardNo);
+            console.log(cardIndex);
+            const newCards = update(cards, {
+                [cardIndex]: {
+                    tasks: {
+                        $push: [json.data]
+                    }
+                }
+            });
+
+            setCards(newCards);  
         },
         delete: function(){},
         changeStatus: function(){}
