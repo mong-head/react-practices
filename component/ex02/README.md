@@ -87,9 +87,20 @@
 
         <img src='../../image/component-ex02-font-result.jpg' width='30%' />
 
-### 10. React Modal (src/08)
+### 10. React Modal [src/10](src/10)
 
-### 11. material-UI (src/09)
+* 설치 : ```npm i react-modal```
+
+* [```_official_ex_modal.js```](src/10/_official_ex_modal.js) : 공식 문서 예제
+
+* [```App.js```](src/10/App.js)
+    * modal 1 : 기본 modal
+    * modal 2 : ```onRequestClose``` : (function) modal 밖에 클릭시 함수
+    * modal 3 : ```shouldCloseOnOverlayClick``` ; true, false로 밖 클릭해서 꺼지게 할 지 결정
+    * modal 4 : inline styling
+    * modal 5 : sass styling :star:
+
+### 11. material-UI [src/11](src/11)
 
 ## project
 
