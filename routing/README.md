@@ -1,0 +1,61 @@
+## React Routing
+
+### ex01 : React Router Basic I : HashRouter Component
+[App.js](src/ex01/App.js)
+```js
+import React from 'react';
+import {HashRouter,Route} from 'react-router-dom';
+import Gallery from './component/Gallery';
+import Main from './component/Main';
+import Guestbook from './component/Guestbook';
+
+export default function () {
+    return (
+        <HashRouter>
+            <Route exact path='/' component={Main} />
+            <Route path='/guestbook' component={Guestbook} />
+            <Route path='/gallery' component={Gallery} />
+        </HashRouter>
+    );
+}
+```
+* Main : ```localhost:9999/#/```
+* Guestbook : ```localhost:9999/#/guestbook```
+* Gallery : ```localhost:9999/#/gallery```
+
+### ex02 : React Router Basic II : Link vs NavLink Component   
+* Link
+    ```js
+    import React from 'react';
+    import {Link} from 'react-router-dom';
+
+    export default function Main(){
+        return (
+            <div>
+                <h1>Main</h1>
+                <ul>
+                    <li><Link to={'/'}>[Main]</Link></li>
+                    <li><Link to={'/guestbook'}>[Guestbook]</Link></li>
+                    <li><Link to={'/gallery'}>[Gallery]</Link></li>
+                </ul>
+            </div>
+        )
+    }
+    ```
+* NavLink
+    * UI 적으로 더 Good
+
+### ex03 : Styling & Semantic MarkUp
+### ex04 : Composition(합성)
+### ex05 : Nesting Route(경로 내포)
+
+### 설치
+``` bash
+    $ npm i react-router-dom
+```
+
+
+### 실행
+```bash
+    $ npm run debug src=[ex01|ex02|ex03|...]
+```
