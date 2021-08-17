@@ -25,25 +25,48 @@ export default function () {
 
 ### ex02 : React Router Basic II : Link vs NavLink Component   
 * Link
-    ```js
-    import React from 'react';
-    import {Link} from 'react-router-dom';
+    * HTML 변환: ```<a href="#/">[Main]</a>```
+    * [ex01/Main.js](src/ex01/component/Main.js)
+        ```js
+        import React from 'react';
+        import {Link} from 'react-router-dom';
 
-    export default function Main(){
-        return (
-            <div>
-                <h1>Main</h1>
-                <ul>
-                    <li><Link to={'/'}>[Main]</Link></li>
-                    <li><Link to={'/guestbook'}>[Guestbook]</Link></li>
-                    <li><Link to={'/gallery'}>[Gallery]</Link></li>
-                </ul>
-            </div>
-        )
-    }
-    ```
+        export default function Main(){
+            return (
+                <div>
+                    <h1>Main</h1>
+                    <ul>
+                        <li><Link to={'/'}>[Main]</Link></li>
+                        <li><Link to={'/guestbook'}>[Guestbook]</Link></li>
+                        <li><Link to={'/gallery'}>[Gallery]</Link></li>
+                    </ul>
+                </div>
+            )
+        }
+        ```
 * NavLink
     * UI 적으로 더 Good
+    * HTML
+        * 현재 페이지인 경우: ```<a aria-current="page" class="active" href="#/">[Main]</a>```
+        * 다른 페이지인 경우: ```<a href="#/guestbook">[Guestbook]</a>```
+    * [ex02/Main.js](src/ex01/component/Main.js)
+        ```js
+        import React from 'react';
+        import {NavLink} from 'react-router-dom';
+
+        export default function Main(){
+            return (
+                <div>
+                    <h1>Main</h1>
+                    <ul>
+                        <li><NavLink to={'/'}>[Main]</NavLink></li>
+                        <li><NavLink to={'/guestbook'}>[Guestbook]</NavLink></li>
+                        <li><NavLink to={'/gallery'}>[Gallery]</NavLink></li>
+                    </ul>
+                </div>
+            )
+        }
+        ```
 
 ### ex03 : Styling & Semantic MarkUp
 ### ex04 : Composition(합성)
