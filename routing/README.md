@@ -69,6 +69,24 @@ export default function () {
         ```
 
 ### ex03 : Styling & Semantic MarkUp
+
+```html
+<div id='root'>
+    <div id='header'>
+    </div>
+
+    <div id='contents'>
+    </div>
+
+    <div id='navigation'>
+    </div>
+
+    <div id='footer'>
+    </div>
+
+</div>
+```
+* 여기에서 navigation에 해당하는 부분 Link로 이동하며 Routing 필요
 ### ex04 : Composition(합성)
 ### ex05 : Nesting Route(경로 내포)
 

@@ -4,7 +4,7 @@
 
 ## 2. [Component](component)
 
-## 3. Routing
+## 3. [Routing](routing)
 
 ## 4. Flux : Redux 
 
