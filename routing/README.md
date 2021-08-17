@@ -83,13 +83,57 @@ export default function () {
 
     <div id='footer'>
     </div>
-
 </div>
 ```
 * 여기에서 navigation에 해당하는 부분 Link로 이동하며 Routing 필요
 
 ### ex04 : Composition(합성)
+
+* Main, Guestbook, Gallery, About : 모두 공통된 부분 존재 -> 한 파일로 뺌
+* SiteLayout
+    * 통일된 layout(Header, Navigation, Footer) 담음
+        * SiteLayout.js
+            ```js
+            import React, { Fragment } from 'react';
+            import Header from './Header';
+            import Navigation from './Navigation';
+            import Footer from './Footer';
+            import Styles from '../assets/scss/layout/Content.scss';
+
+            export default function SiteLayout({children}){
+                return (
+                    <Fragment>
+                        <Header />
+                        <div className={Styles.Content}>
+                            {children}
+                        </div>
+                        <Navigation />
+                        <Footer />
+                    </Fragment>
+                )
+            }
+            ```
+    * Main,Guestbook,Gallery,About Component에서 사용(상속)
+        * ex) Main.js
+            ```js
+            import React, { Fragment } from 'react';
+            import SiteLayout from '../layout/SiteLayout';
+            import Styles from '../assets/scss/component/Main.scss';
+
+            export default function Main(){
+                return (
+                    <SiteLayout>
+                        <div className={Styles.Main}>
+                            <h2>Main</h2>
+                        </div>
+                    </SiteLayout>
+                )
+            }
+            ```
+
 ### ex05 : Nesting Route(경로 내포)
+
+* Navigation(NavLink 존재) 밑에 Navigation 존재하는 component내포 
 
 ### 설치
 ``` bash
