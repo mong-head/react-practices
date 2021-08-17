@@ -71,5 +71,5 @@
     * Frontend : React(SPA)
     * AJAX : fetch 기반
 * App03.Guestbook(node + react)
-* App04.Gallery(node + react)
+* App04.[Gallery(node + react)](gallery)
 * mysite(App03 + App04)
