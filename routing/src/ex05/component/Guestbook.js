@@ -1,0 +1,13 @@
+import React, { Fragment } from 'react';
+import SiteLayout from '../layout/SiteLayout';
+import Styles from '../assets/scss/component/Guestbook.scss';
+
+export default function Guestbook(){
+    return (
+        <SiteLayout>
+            <div className={Styles.Guestbook}>
+                <h2>Guestbook</h2>
+            </div>
+        </SiteLayout>
+    )
+}
